@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('./Norse-Bold.otf') format('woff2'),
+         url('./Norse-Bold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #202020;
+}
+
+.container {
+    width: 1440px;
+    height: 1024px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-side {
+    position: absolute;
+    width: 540px;
+    height: 100%;
+}
+
+.left-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-side small {
+    width: 100%;
+    bottom: 0;
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.left-side small a {
+    color: white;
+}
+
+.left-side .logo-container {
+    position: relative;
+    width: 100%;
+    height: 138px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container .logo-container-img {
+    position: absolute;
+    width: 93px;
+    height: 118px;
+    left: 168px;
+}
+
+.logo-container-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container .logo-container-title {
+    position: absolute;
+    width: 144px;
+    height: 71px;
+    right: 138px;
+    padding-bottom: 14px;
+}
+
+.logo-container .logo-container-title p {
+    color: white;
+    font-size: 90px;
+    font-family: 'norsebold';
+    text-align: center;
+}
+
+.right-side {
+    width: calc(100% - 540px);
+    height: 100%;
+    float: right;
+    background-color: #f9fafb;
+}
+
+.right-side p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.right-side-top {
+    width: 700px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 30px;
+}
+
+.right-side-top p:first-child {
+    padding-top: 84px;
+}
+
+.right-side p:nth-child(3) {
+    padding-top: 30px;
+}
+
+.right-side-form {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+    background-color: white;
+}
+
+.right-side-form p {
+    padding-bottom: 8px;
+}
+
+.right-side-form form {
+    width: 600px;
+    height: 210px;
+    padding-top: 16px;
+    position: relative;
+}
+
+.right-side-form form label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3f3f3f;
+    font-family: sans-serif;
+    text-align: start;
+}
+
+.right-side-form input {
+    width: 200px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+
+.right-side-form form .form-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -308px;
+    top: 7%;
+}
+
+.right-side-form input:focus {
+    outline: 1px solid #1d4ed8;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.20);
+}
+
+.right-side-form input:invalid {
+    border: none;
+    outline: 1px solid #b91c1c;
+    border-radius: 5px;
+}
+
+.right-side-form form,
+.right-side-form p {
+    padding-left: 30px;
+}
+
+.right-side-create-account {
+    padding: 30px;
+}
+
+.right-side-create-account button {
+    width: 216px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: #596D48;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+    cursor: pointer;
+}
+
+.right-side-create-account p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 32px;
+}
+
+.right-side-create-account p a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
